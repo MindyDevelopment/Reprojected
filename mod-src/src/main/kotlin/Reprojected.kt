@@ -12,7 +12,7 @@ import com.github.mnemotechnician.mkui.extensions.groups.*
 class Reprojected : Mod() {
 
 	init {
-	    Events.on(ClientLoadEvent::class.java){
+	    Events.on(EventType.ClientLoadEvent::class.java){
 	        val info = BaseDialog("@reprojected-dialog.info").apply{
 	            closeOnBack()
 	            addCloseButton()
