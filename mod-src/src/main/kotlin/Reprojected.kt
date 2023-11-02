@@ -25,6 +25,8 @@ class Reprojected : Mod() {
 	                }
 	            }
 	        }
+
+		info.show()
 	    }
 	}
 	
