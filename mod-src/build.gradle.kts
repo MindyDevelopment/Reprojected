@@ -2,52 +2,21 @@ import java.io.OutputStream
 import java.security.MessageDigest
 import java.util.Base64
 
-/**
- * This file allows you to configure the compilation process of your mod.
- * There's several comments that you should read & follow in order to make everything work correctly
- */
 
 plugins {
 	kotlin("jvm") version "1.8.0"
-	
-	/**
-	 * Uncomment this line and the "publications" block below if you want to publish to maven. 
-	 * Normally you don't need that unless you're creating a library.
-	*/
-	//`maven-publish`
 }
 
 /** The output jar files will contain this string in their names. */
-val jarName = "compiled-mod"
+val jarName = "Reprojected"
 
 /** Windows sucks. */
 val windows = System.getProperty("os.name").contains("windows", true)
 
 dependencies {
-	/*
-	 * You can add your mod-specific dependencies in this block.
-	 * These will not affect other modules, if you have any.
-	 * For example, if you have another module in your project and you want to include it in this one.
-	 * use `implementation(project("project-name"))`
-	 * See the top-level gradle buildscript if you want to modify the mindustry/arc deps.
-	*/
+
 }
 
-/*
- * Read the comment in "plugins" block.
-
-publishing {
-	publications {
-		create<MavenPublication>("maven") {
-			groupId = "com.github.YOUR_GITHUB_USERNAME" //replace these with your username/reponame
-			artifactId = "YOUR_GITHUB_REPO_NAME"
-			version = "1.0"
-
-			from(components["java"])
-		}
-	}
-}
-*/
 
 /** 
  * Android-specific stuff. 
