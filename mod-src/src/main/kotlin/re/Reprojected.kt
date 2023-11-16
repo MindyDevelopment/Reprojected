@@ -5,6 +5,7 @@ import arc.util.*
 import arc.files.*
 import arc.scene.ui.*
 import arc.scene.event.*
+import mindustry.*
 import mindustry.mod.*
 import mindustry.game.*
 import mindustry.ui.*
