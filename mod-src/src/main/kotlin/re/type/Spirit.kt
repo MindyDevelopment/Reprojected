@@ -9,10 +9,6 @@ open class Spirit(name: String) : UnitType(name){
     /** The upgrade map for this spirit. */
     var upgradeMap = UpgradeMap.emptyArray(maxLevel)
     
-    
-    fun upgrade(vararg values: Any){
-        upgradeMap = UpgradeMap.with(values)
-    }
 }
 
 open class UpgradeMap(){
